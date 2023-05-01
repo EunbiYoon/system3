@@ -28,6 +28,6 @@ class Comment(models.Model):
     comment_body = models.TextField()
     date_added=models.DateTimeField(auto_now_add=True)
     def __str__(self):
-        return str(self.post)+ ' | ' + str(self.body)
+        return str(self.post)+ ' | ' + str(self.comment_body)
     class Meta:
         verbose_name_plural='  3) Comments'
